@@ -1,12 +1,27 @@
 // import Image from "next/image";
 
+import Image from "next/image";
+
 export default function Reviews() {
     return (
         <div className="grid place-content-center gap-4">
-            <div className="p-4 grid w-full place-content-center gap-4">
+            <div className="p-4 grid w-full place-content-center gap-10 relative">
                 <div
-                    className="text-3xl font-serif font-bold grid w-full place-content-center"
-                >{'Testimonials'}</div>
+                    className="relative"
+                >
+                    <span className="text-[3em]  w-fit font-bold grid place-content-center px-20">
+                        {'Testimonials'}
+                    </span>
+                    <Image
+                        src={'/underlline.svg'}
+                        alt="Underline"
+                        // layout="fill"
+                        objectFit="cover"
+                        width={200}
+                        height={200}
+                        className="absolute z-5 w-60 rotate-3 left-20 top-10"
+                    />
+                </div>
 
                 <div className="grid place-content-center px-40">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">

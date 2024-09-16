@@ -1,10 +1,20 @@
+import Image from "next/image";
+
 export function NavigationBar() {
     return (
-        <div className="flex border-black shadow-sm justify-around items-center p-1 bg-white">
+        <div className="flex border-black shadow-sm justify-around items-center p-1 bg-white ">
             {/* Logo */}
             <div className="p-2 font-bold font-mono flex items-center">
-                <div></div>
-                <span className="font-mono p-2 font-bold">
+                <div className="relative w-10 h-10">
+                    <Image
+                        alt="Logo"
+                        layout="fill"
+                        objectFit="cover"
+                        src={"/logo.png"}
+                        className="absolute"
+                    />
+                </div>
+                <span className="geistSans p-2 font-bold text-xl Merienda">
                     {"D'Lost"}
                 </span>
             </div>

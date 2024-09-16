@@ -17,4 +17,16 @@
   .brandText {
     @apply text-blue-400
   }
+
+  @font-face {
+    font-family: 'Merienda';
+    src: url('https: //fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap') format('woff');
+    font-weight: 100 900;
+    font-style: normal;
+    font-optical-sizing: auto;
+  }
+
+  .Merienda {
+    font-family: var(--font-geist-sans), var(--font-geist-mono), 'Merienda', cursive;
+  }
 }

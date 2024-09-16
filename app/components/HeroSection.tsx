@@ -11,11 +11,20 @@ export default function HeroSection() {
                         {'to'}
                     </span>
                 </div>
-                <div className="text-[5em] font-semibold font-serif">
+                <div className="text-[5em] font-semibold font-serif relative">
                     <span>{"Enjoy the "}</span>
-                    <span className="font-normal">
+                    <span className="font-normal brandText">
                         {"Curves!"}
                     </span>
+                    <Image
+                        src={'/underlline.svg'}
+                        alt="Underline"
+                        // layout="fill"
+                        objectFit="cover"
+                        width={200}
+                        height={200}
+                        className="absolute z-5 w-60 right-0 rotate-0 bottom-0"
+                    />
                 </div>
                 <div className="grid place-content-center">
                     <a className="p-2 px-4 border rounded-full brandColor font-mono font-bold">
